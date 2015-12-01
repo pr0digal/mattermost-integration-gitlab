@@ -51,7 +51,7 @@ def new_event():
     text = ''
     base_url = ''
 
-    if REPORT_EVENTS[PUSH_EVENT] and  object_kind == PUSH_EVENT:
+    if REPORT_EVENTS[PUSH_EVENT] and object_kind == PUSH_EVENT:
           #git_added = add_markdown_quotes(data['added'])
           #git_mod = add_markdown_quotes(data['modified'])
           #git_removed = add_markdown_quotes(data['removed'])
