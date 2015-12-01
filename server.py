@@ -10,7 +10,7 @@ app = Flask(__name__)
 
 USERNAME = 'gitlab'
 ICON_URL = 'https://gitlab.com/uploads/project/avatar/13083/gitlab-logo-square.png'
-MATTERMOST_WEBHOOK_URL = 'http://mm-dev.z5.io/hooks/d8nmf666ubfqjyd4c7pyc1xdxy' # Paste the Mattermost webhook URL you created here
+MATTERMOST_WEBHOOK_URL = '' # Paste the Mattermost webhook URL you created here
 CHANNEL = '' # Leave this blank to post to the default channel of your webhook
 
 PUSH_EVENT = 'push'
