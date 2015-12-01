@@ -20,7 +20,7 @@ COMMENT_EVENT = 'note'
 MERGE_EVENT = 'merge_request'
 
 REPORT_EVENTS = {
-    PUSH_EVENT: False, # On pushes to the repository excluding tags
+    PUSH_EVENT: True, # On pushes to the repository excluding tags
     ISSUE_EVENT: True, # On creation of a new issue
     TAG_EVENT: False, # On creation of tags
     COMMENT_EVENT: True, # When a new comment is made on commits, merge requests, issues, and code snippets
