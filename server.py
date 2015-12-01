@@ -60,7 +60,7 @@ def new_event():
             data['total_commits_count'],
             data['ref'],
             data['repository']['name'],
-            data['repository']['homepage'],
+            data['repository']['homepage']
             # git_added,
             # git_mod,
             # git_removed
