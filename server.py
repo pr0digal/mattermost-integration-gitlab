@@ -51,21 +51,6 @@ def new_event():
     text = ''
     base_url = ''
 
-    #if REPORT_EVENTS[PUSH_EVENT] and object_kind == PUSH_EVENT:
-          #git_added = add_markdown_quotes(data['added'])
-          #git_mod = add_markdown_quotes(data['modified'])
-          #git_removed = add_markdown_quotes(data['removed'])
-     #   text = '%s pushed %d commit(s) into the `%s` branch for project [%s](%s).' % ( #\n *Added*\n %s\n *Modified*\n %s\n *Removed*\n %s' % (
-      #      data['user_name'],
-       #     data['total_commits_count'],
-        #    data['ref'],
-         #   data['repository']['name'],
-          #  data['repository']['homepage']
-            #git_added,
-            #git_mod,
-            #git_removed
-       # )
-
     if REPORT_EVENTS[PUSH_EVENT] and  object_kind == PUSH_EVENT:
         text = '%s pushed %d commit(s) into the `%s` branch for project [%s](%s).' % (
             data['user_name'],
@@ -74,7 +59,6 @@ def new_event():
             data['repository']['name'],
             data['repository']['homepage']
         )
-        
     elif REPORT_EVENTS[ISSUE_EVENT] and object_kind == ISSUE_EVENT:
         action = data['object_attributes']['action']
 
